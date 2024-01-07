@@ -4,8 +4,8 @@ import { StudentSubLists } from './StudentSubLists'
 import { useContext } from "react";
 
 export const StudentLists = () => {
-    const { students } = useContext(AppContext);
-    console.log(students)
+    const { students1 } = useContext(AppContext);
+    console.log(students1)
   return (
     <div>
         <div>
@@ -20,7 +20,7 @@ export const StudentLists = () => {
           </tr>
         </thead>
         <tbody>
-          {students?.map((student) => {
+          {students1?.map((student) => {
             return (
               <tr>
                 <td>{student.id}</td>

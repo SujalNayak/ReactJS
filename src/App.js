@@ -12,6 +12,7 @@ import { BookList } from "./Book/BookList";
 import { LoginUser } from './components/Login';
 import ProtectedRoutes from './hooks/ProtectedRoutes';
 import { Students } from './components/students/Students';
+// import { Students } from './components/students/Students';
 function App() {
   return(
     <div>
@@ -24,9 +25,10 @@ function App() {
           <Route element = {<ProtectedRoutes/>}>
           <Route path="/AddBook" element={<AddBook/>}></Route>
           <Route path="/BookList" element={<BookList/>}></Route>
-          <Route path='/Students' element={<Students/>}></Route>
+          
 
           </Route>
+          <Route path='/Students' element={<Students/>}></Route>
           {/* <Route path="/AddBookPdf" element={<AddBookPdf/>}></Route> */}
           {/* <Route path="/PdfViewer" element={<PdfViewer/>}></Route> */}
         </Routes>

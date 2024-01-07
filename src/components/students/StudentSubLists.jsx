@@ -2,11 +2,11 @@ import React, { useContext } from 'react'
 import { AppContext } from '../../context'
 
 export const StudentSubLists = () => {
-    const {students} = useContext(AppContext);
+    const {students1} = useContext(AppContext);
   return (
     <div>StudentSubLists
         <h1>
-        {students?.map((student) => {
+        {students1?.map((student) => {
             return (
               <tr>
                 <td>{student.id}</td>
